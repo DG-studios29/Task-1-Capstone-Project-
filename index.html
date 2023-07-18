@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head> 
+    <title>Yum Yum | Food Google</title>
+    <link rel="stylesheet" type="text/css" href="main.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="Index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Yum Yum</h1>
+            <ul>
+                <li class="dropdown">
+                    <a href="#articles">Articles</a>
+                    <div class="dropdown-content">
+                        <a href="#">Unveiling the Secrets of Umami: The Fifth Taste</a>
+                        <a href="#">Fascinating Facts About Fermentation and its Culinary Wonders</a>
+                        <a href="#">The Hidden Superpowers of Spices: Beyond Flavor Enhancement</a>
+                        <a href="#">The Intriguing History of Chocolate: From Ancient Civilization to Modern Delicacy</a>
+                        <a href="#">Beyond the Bubble: Lesser-Known Facts about Champagne</a>
+                        <a href="#">Rediscovering 'Ugly' Produce: The Fight Against Food Waste</a>
+                        <a href="#">From Farm to Fork: The Journey of Organic Food</a>
+                        <a href="#">Beyond Sushi: The Diversity of Japanese Cuisine</a>
+                        <a href="#">The Rise of Plant-Based Meat Alternatives: Shifting Perspectives on Protein</a>
+                        <a href="#">The Science of Taste: Exploring How Our Palate Perceives Flavors</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#images">Gallery</a>
+                    <div class="dropdown-content">
+                        <a href="#">Cheesecake Brownies</a>
+                        <a href="#">Dark Chocolate Tart</a>
+                        <a href="#">No-Bake Blueberry Cheesecake</a>
+                        <a href="#">Berries and Cream Crepes</a>
+                        <a href="#">Beignets</a>
+                        <a href="#">Cheesy chicken tray bake with leek and bacon</a>
+                        <a href="#">Surf and turf rissole traybake</a>
+                        <a href="#">Crispiest sweetcorn fritters</a>
+                        <a href="#">Lemon butter prawns</a>
+                        <a href="#">Almost-instant creamy chicken and corn noodles</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#recipes">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="#">Lemon Garlic Butter Salmon</a>
+                        <a href="#">Chicken Parmesan</a>
+                        <a href="#">Beef Stir-Fry with Vegetables</a>
+                        <a href="#">Caprese Stuffed Chicken Breast</a>
+                        <a href="#">Vegetable Curry</a>
+                        <a href="#">Classic Chocolate Cake</a>
+                        <a href="#">Homemade Apple Pie</a>
+                        <a href="#">Strawberry Cheesecake</a>
+                        <a href="#">Tiramisu</a>
+                        <a href="#">Mixed Berry Crumble</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="SaveforLater.html">Your Saved Data</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+
+    <div id="panel1">
+        <h3>Did you know </h3>
+        <div class="row">
+            <div class="column">
+                <li><p3>Unveiling the Secrets of Umami: The Fifth Taste</p3></li>
+                <li><p3>Fascinating Facts About Fermentation and its Culinary Wonders</p3></li>
+                <li><p3>The Hidden Superpowers of Spices: Beyond Flavor Enhancement</p3></li>
+                <li><p3>The Intriguing History of Chocolate: From Ancient Civilization to Modern Delicacy</p3></li>
+                <li><p3>Beyond the Bubble: Lesser-Known Facts about Champagne</p3></li>
+                
+            </div>
+
+            <div class="column">
+                <li><p3>Rediscovering 'Ugly' Produce: The Fight Against Food Waste</p3></li>
+                <li><p3>From Farm to Fork: The Journey of Organic Food</p3></li>
+                <li><p3>Beyond Sushi: The Diversity of Japanese Cuisine</p3></li>
+                <li><p3>The Rise of Plant-Based Meat Alternatives: Shifting Perspectives on Protein</p3></li>
+                <li><p3>The Science of Taste: Exploring How Our Palate Perceives Flavors</p3></li>
+                
+            </div>
+        </div>
+            
+            
+    </div>
+        <div id="panel2">
+            <h5>Gallery</h5>
+            
+            <div class="image-grid">
+              <div class="image-container">
+                <img src="https://insanelygoodrecipes.com/wp-content/uploads/2021/04/Cheesecake_Brownies-768x1152.webp" alt="Image1">
+                <button class="save-button" data-item="cheesecake-brownies">Save for Later</button>
+                <button class="like-button" data-item="cheesecake-brownies" onclick="toggleLike(this)"><i class="far fa-heart"></i></button>
+              </div>
+              <div class="image-container">
+                <img src="https://i.pinimg.com/564x/0c/fa/e2/0cfae230c5f6ed95b78a77c72fe402be.jpg" alt="Image2">
+                <button class="save-button" data-item="Dark Chocolate Tart">Save for Later</button>
+                <button class="like-button" data-item="Dark Chocolate Tart" onclick="toggleLike(this)"><i class="far fa-heart"></i></button>
+              </div>
+              <div class="image-container">
+                <img src="https://i.pinimg.com/564x/ea/bb/5c/eabb5c64011133d536ba32c3847003ab.jpg" alt="Image3">
+                <button class="save-button" data-item="No-Bake Blueberry Cheesecake">Save for Later</button>
+                <button class="like-button" data-item="No-Bake Blueberry Cheesecake" onclick="toggleLike(this)"><i class="far fa-heart"></i></button>
+              </div>
+              <div class="image-container">
+                <img src="https://i.pinimg.com/564x/44/3b/0d/443b0ddde6a5bca8925858de31a4a47f.jpg" alt="Image4">
+                <button class="save-button" data-item="Berries and Cream Crepes">Save for Later</button>
+                <button class="like-button" data-item="Berries and Cream Crepes" onclick="toggleLike(this)"><i class="far fa-heart"></i></button>
+              </div>
+              <div class="image-container">
+                <img src="https://i.pinimg.com/564x/39/23/5d/39235d231dd0543a55d3e3d23fb1cc48.jpg" alt="Image5">
+                <button class="save-button" data-item="Beignets">Save for Later</button>
+                <button class="like-button" data-item="Beignets" onclick="toggleLike(this)"><i class="far fa-heart"></i></button>
+              </div>
+              <div class="image-container">
+                <img src="https://img.taste.com.au/jwTYQjbM/w720-h480-cfill-q80/taste/2020/12/jan21-cheesy-chicken-tray-bake-with-leek-and-bacon-taste-1-168307-1.jpg" alt="Image6">
+                <button class="save-button" data-item="Cheesy chicken tray bake with leek and bacon">Save for Later</button>
+                <button class="like-button" data-item="Cheesy chicken tray bake with leek and bacon" onclick="toggleLike(this)"><i class="far fa-heart"></i></button>
+              </div>
+              <div class="image-container">
+                <img src="https://img.taste.com.au/4T67wm6c/w720-h480-cfill-q80/taste/2020/12/giant-skillet-haloumi-zucchini-fritter-168379-2.jpg" alt="Image7">
+                <button class="save-button" data-item="Surf and turf rissole traybake">Save for Later</button>
+                <button class="like-button" data-item="Surf and turf rissole traybake" onclick="toggleLike(this)"><i class="far fa-heart"></i></button>
+              </div>
+              <div class="image-container">
+                <img src="https://img.taste.com.au/5b93j5J2/w720-h480-cfill-q80/taste/2021/01/crispiest-fritters-ever-168502-2.jpg" alt="Image8">
+                <button class="save-button" data-item="Crispiest sweetcorn fritters">Save for Later</button>
+                <button class="like-button" data-item="Crispiest sweetcorn fritters" onclick="toggleLike(this)"><i class="far fa-heart"></i></button>
+              </div>
+              <div class="image-container">
+                <img src="https://img.taste.com.au/7kDkCl_h/w720-h480-cfill-q80/taste/2021/01/lemon-butter-prawns-168504-2.jpg" alt="Image9">
+                <button class="save-button" data-item="Lemon butter prawns">Save for Later</button>
+                <button class="like-button" data-item="Lemon butter prawns" onclick="toggleLike(this)"><i class="far fa-heart"></i></button>
+              </div>
+              <div class="image-container">
+                <img src="https://img.taste.com.au/-Upv8gzm/w720-h480-cfill-q80/taste/2021/01/almost-instant-creamy-chicken-and-corn-noodles-168503-2.jpg" alt="Image10">
+                <button class="save-button" data-item="Almost-instant creamy chicken and corn noodles">Save for Later</button>
+                <button class="like-button" data-item="Almost-instant creamy chicken and corn noodles" onclick="toggleLike(this)"><i class="far fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+          
+      
+    
+    <div id ="panel3">
+        <h3>Recipes To Try</h3>
+        <h3>Meals:</h3>
+        <ul>
+            <li class="dropdown"> <a href="#lemon">Lemon Garlic Butter Salmon</a>
+                <div class="dropdown-content">
+                    <a href="#">4 salmon fillets</a>
+                    <a href="#">4 tablespoons unsalted butter, melted</a>
+                    <a href="#">4 cloves garlic, minced</a>
+                    <a href="#">2 tablespoons fresh lemon juice</a>
+                    <a href="#">1 teaspoon lemon zest</a>
+                    <a href="#">Salt and black pepper to taste</a>
+                    <a href="#">Fresh parsley for garnish</a>
+                </div>
+                <button class="save-button2" data-item="Lemon Garlic Butter Salmon">Save for Later</button>
+                
+            </li>
+
+            <li class="dropdown"> <a href="#chicken">Chicken Parmesan</a>
+                <div class="dropdown-content">
+                    <a href="#">4 boneless, skinless chicken breasts</a>
+                    <a href="#">1 cup breadcrumbs</a>
+                    <a href="#">1/2 cup grated Parmesan cheese</a>
+                    <a href="#">1 teaspoon dried oregano</a>
+                    <a href="#">1 teaspoon dried basil</a>
+                    <a href="#">1/2 teaspoon garlic powder</a>
+                    <a href="#">Salt and black pepper to taste</a>
+                    <a href="#">1 cup marinara sauce</a>
+                    <a href="#">1 cup shredded mozzarella cheese</a>
+                    <a href="#">Fresh basil leaves for garnish</a>
+                </div>
+                <button class="save-button2" data-item="Chicken Parmesan">Save for Later</button>
+            </li>
+
+            <li class="dropdown"> <a href="#beef">Beef Stir-Fry with Vegetables</a>
+                <div class="dropdown-content">
+                    <a href="#">1 lb (450g) beef sirloin, thinly sliced</a>
+                    <a href="#">2 tablespoons soy sauce</a>
+                    <a href="#">2 tablespoons oyster sauce</a>
+                    <a href="#">1 tablespoon cornstarch</a>
+                    <a href="#">1 tablespoon vegetable oil</a>
+                    <a href="#">2 cloves garlic, minced</a>
+                    <a href="#">1 red bell pepper, sliced</a>
+                    <a href="#">1 green bell pepper, sliced</a>
+                    <a href="#">1 medium onion, sliced</a>
+                    <a href="#">1 cup broccoli florets</a>
+                    <a href="#">Salt and black pepper to taste</a>
+                    <a href="#">Cooked rice or noodles for serving</a>
+                </div>
+                <button class="save-button2" data-item="Beef Stir-Fry with Vegetables">Save for Later</button>
+            </li>
+
+
+            <li class="dropdown"> <a href="#caprese">Caprese Stuffed Chicken Breast</a>
+                <div class="dropdown-content">
+                    <a href="#">4 boneless, skinless chicken breasts</a>
+                    <a href="#">4 slices mozzarella cheese</a>
+                    <a href="#">4 slices tomato</a>
+                    <a href="#">4 fresh basil leaves</a>
+                    <a href="#">Salt and black pepper to taste</a>
+                    <a href="#">2 tablespoons balsamic glaze (optional)</a>
+                    <a href="#">Fresh basil leaves for garnish</a>
+                </div>
+                <button class="save-button2" data-item="Caprese Stuffed Chicken Breast">Save for Later</button>
+            </li>
+
+            <li class="dropdown"> <a href="#curry">Vegetable Curry</a>
+                <div class="dropdown-content">
+                    <a href="#">1 tablespoon vegetable oil</a>
+                    <a href="#">1 onion, diced</a>
+                    <a href="#">2 cloves garlic, minced</a>
+                    <a href="#">1 tablespoon curry powder</a>
+                    <a href="#">1 teaspoon ground cumin</a>
+                    <a href="#">1 teaspoon ground coriander</a>
+                    <a href="#">1/2 teaspoon turmeric</a>
+                    <a href="#">1/2 teaspoon paprika</a>
+                    <a href="#">1 cup diced potatoes</a>
+                    <a href="#">1 cup cauliflower florets</a>
+                    <a href="#">1 cup sliced carrots</a>
+                    <a href="#">1 cup sliced bell peppers</a>
+                    <a href="#">1 cup chopped tomatoes</a>
+                    <a href="#">1 cup coconut milk</a>
+                    <a href="#">Salt to taste</a>
+                    <a href="#">Fresh cilantro for garnish</a>
+                </div>
+                <button class="save-button2" data-item="Vegetable Curry">Save for Later</button>
+            </li>
+        </ul>
+        
+        <h3>Desserts:</h3>
+        <ul>
+            <li class="dropdown"> <a href="#cake">Classic Chocolate Cake</a>
+                <div class="dropdown-content">
+                    <a href="#">1 and 3/4 cups all-purpose flour</a>
+                    <a href="#">1 and 1/2 teaspoons baking powder</a>
+                    <a href="#">1 and 1/2 teaspoons baking soda</a>
+                    <a href="#">3/4 cup unsweetened cocoa powder</a>
+                    <a href="#">2 cups granulated sugar</a>
+                    <a href="#">2 large eggs</a>
+                    <a href="#">1 cup milk</a>
+                    <a href="#">1/2 cup vegetable oil</a>
+                    <a href="#">2 teaspoons vanilla extract</a>
+                    <a href="#">1 cup boiling water</a>
+                    <a href="#">Chocolate frosting (optional)</a>
+                </div>
+                <button class="save-button2" data-item="Classic Chocolate Cake">Save for Later</button>
+            </li>
+
+            <li class="dropdown"> <a href="#homemade">Homemade Apple Pie</a>
+                <div class="dropdown-content">
+                    <a href="#">2 prepared pie crusts (store-bought or homemade)</a>
+                    <a href="#">6 cups sliced apples (such as Granny Smith or Honeycrisp)</a>
+                    <a href="#">3/4 cup granulated sugar</a>
+                    <a href="#">2 tablespoons all-purpose flour</a>
+                    <a href="#">1 teaspoon ground cinnamon</a>
+                    <a href="#">1/4 teaspoon ground nutmeg</a>
+                    <a href="#">1 tablespoon lemon juice</a>
+                    <a href="#">2 tablespoons butter, cut into small pieces</a>
+                    <a href="#">1 egg, beaten (for egg wash)</a>
+                    <a href="#">Additional sugar for sprinkling</a>
+                </div>
+                <button class="save-button2" data-item="Homemade Apple Pie">Save for Later</button>
+            </li>
+
+
+            <li class="dropdown"> <a href="#Strawberry Cheesecake">Strawberry Cheesecake</a>
+                <div class="dropdown-content">
+                    <a href="#">1 and 1/2 cups graham cracker crumbs</a>
+                    <a href="#">1/4 cup melted butter</a>
+                    <a href="#">2 cups fresh strawberries, hulled and sliced</a>
+                    <a href="#">2 tablespoons granulated sugar</a>
+                    <a href="#">16 ounces cream cheese, softened</a>
+                    <a href="#">1 cup powdered sugar</a>
+                    <a href="#">1 teaspoon vanilla extract</a>
+                    <a href="#">1 cup heavy cream, whipped</a>
+                </div>
+                <button class="save-button2" data-item="Strawberry Cheesecake">Save for Later</button>
+            </li>
+
+            <li class="dropdown"> <a href="#Tiramisu">Tiramisu</a>
+                <div class="dropdown-content">
+                    <a href="#">1 and 1/2 cups strong brewed coffee, cooled</a>
+                    <a href="#">3 tablespoons coffee liqueur (such as Kahlua or Tia Maria)</a>
+                    <a href="#">24 ladyfinger cookies</a>
+                    <a href="#">1 cup mascarpone cheese</a>
+                    <a href="#">1/2 cup powdered sugar</a>
+                    <a href="#">1 teaspoon vanilla extract</a>
+                    <a href="#">1 cup heavy cream</a>
+                    <a href="#">Unsweetened cocoa powder, for dusting</a>
+                </div>
+                <button class="save-button2" data-item="Tiramisu">Save for Later</button>
+            </li>
+
+            <li class="dropdown"> <a href="#Mixed Berry Crumble">Mixed Berry Crumble</a>
+                <div class="dropdown-content">
+                    <a href="#">4 cups mixed berries (such as strawberries, blueberries, raspberries)</a>
+                    <a href="#">1/4 cup granulated sugar</a>
+                    <a href="#">1 tablespoon cornstarch</a>
+                    <a href="#">1 cup all-purpose flour</a>
+                    <a href="#">1/2 cup rolled oats</a>
+                    <a href="#">1/2 cup brown sugar</a>
+                    <a href="#">1/2 teaspoon ground cinnamon</a>
+                    <a href="#">1/4 teaspoon salt</a>
+                    <a href="#">1/2 cup cold unsalted butter, diced</a>
+                </div>
+                <button class="save-button2" data-item="Mixed Berry Crumble">Save for Later</button>
+            </li>
+        </ul>
+    </div>
+
+    
+  
+
+    <div id = "panel4">
+        <div class="container">
+            <h4>Unleash Your Cravings</h4>
+            <div class="input-group">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                  <input type="text" id="name" placeholder="Your Name">
+                  <input type="email" id="email" placeholder="Your Email">
+                  <textarea id="message" placeholder="Your Message"></textarea>
+                  <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        
+         
+          <footer>
+            <p class="text-center">&copy; 2023 Your Company. All rights reserved.</p>
+          </footer>
+    </div>
+      
+   
+    
+</body>

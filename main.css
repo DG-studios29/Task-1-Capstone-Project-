@@ -1,0 +1,582 @@
+/* Styling for h1 element */
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: "Franklin Gothic Medium";
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Styling for h2 element */
+h2 {
+  color: rgb(230, 102, 52);
+  /* Text color */
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  text-align: center;
+  /* Text alignment */
+}
+
+/* Styling for h3 element */
+h3 {
+  color: rgb(0, 0, 0);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+/* Styling for h4 element */
+h4 {
+  color: rgb(0, 0, 0);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15pt;
+}
+
+/* Styling for header element */
+header {
+  position: fixed;
+  top: 0;
+  /* Distance from top */
+  left: 0;
+  /* Distance from left */
+  width: 100%;
+  /* Full width */
+  z-index: 999;
+  /* Stack order */
+}
+
+/* Styling for p element */
+p {
+  margin-right: 20px;
+  font-size: 10px;
+}
+
+/* Styling for p3 element */
+p3 {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+/* Styling for menu class */
+.menu {
+  width: 30%;
+  float: left;
+}
+
+/* Styling for main class */
+.main {
+  width: 70%;
+  float: left;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.navbar ul li a {
+  text-decoration: none;
+}
+
+/* Styling for navbar class */
+.navbar {
+  background-color: #f2f2f2;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+
+/* Styling for ul element */
+ul {
+  list-style-type: none;
+  /* Remove bullet points */
+  margin-right: 300px;
+  padding: 0;
+  font-size: small;
+  overflow: hidden;
+  /* Overflow behavior */
+}
+
+/* Styling for li element */
+li {
+  float: left;
+  /* Floating to the left */
+}
+
+/* Styling for li a and .dropbtn elements */
+li a,
+.dropbtn {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Styling for li a:hover and .dropdown:hover .dropbtn elements */
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(100, 100, 100);
+}
+
+/* Styling for li.dropdown element */
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  padding: 10px;
+  min-width: 200px;
+  z-index: 1;
+}
+.dropdown-content a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Styling for dropdown-content a:hover elements */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Styling for dropdown:hover .dropdown-content elements */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Styling for button class */
+.button {
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Styling for button1 class */
+.button1 {
+  border-radius: 12px;
+  color: white;
+  background-color: #ffbf00;
+}
+
+/* Styling for button2 class */
+.button2 {
+  border-radius: 8px;
+  color: white;
+  background-color: #ff7300;
+}
+
+/* Styling for button3 class */
+.button3 {
+  border-radius: 8px;
+  color: #ff7300;
+}
+
+/* Styling for button4 class */
+.button4 {
+  border-radius: 8px;
+  color: #00f2ff;
+}
+
+/* Styling for panel1 id */
+#panel1 {
+  width: auto;
+  height: 400px;
+  background-color: #3a3a3a47;
+  padding-top: 30px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* Styling for panel2 id */
+#panel2 {
+  width: auto;
+  height: auto;
+  background-color: #d7d7d747;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* Styling for h5 element */
+h5 {
+  color: rgb(0, 0, 0);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20pt;
+  text-align: center;
+}
+
+/* Styling for grid-container class */
+.grid-container {
+  display: grid;
+  /* Display as grid */
+  grid-template-columns: auto auto auto;
+  /* Grid columns */
+  gap: 10px;
+  /* Gap between grid items */
+  padding: 10px;
+}
+
+/* Styling for grid-container > div elements */
+.grid-container > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: -220px;
+}
+
+/* Styling for grid-container2 class */
+.grid-container2 {
+  display: grid;
+  /* Display as grid */
+  grid-template-columns: auto auto auto;
+  /* Grid columns */
+  gap: 10px;
+  /* Gap between grid items */
+  padding: 10px;
+}
+
+/* Styling for grid-container2 > div elements */
+.grid-container2 > div {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Styling for item1 class */
+.item1 {
+  grid-area: 1 / 3 / 2;
+}
+
+/* Styling for p4 element */
+p4 {
+  font-size: small;
+}
+
+/* Styling for center-image class */
+.center-image {
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+
+/* Styling for text-center class */
+.text-center {
+  text-align: center;
+}
+
+/* Styling for h6 element */
+h6 {
+  color: rgb(0, 0, 0);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10pt;
+  text-align: center;
+}
+
+/* Styling for panel3 id */
+#panel3 {
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #bdb9b9;
+}
+
+#centerpanel {
+  /* Styles for the center panel */
+  width: 800px;
+  height: 250px;
+  border-radius: 8px;
+  background-color: #f1f1f1b2;
+  padding: 20px;
+  padding-top: 30px;
+}
+
+.center-panel {
+  /* Styles for the center panel container */
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button5 {
+  /* Styles for button 5 */
+  border-radius: 8px;
+  color: white;
+  background-color: #067a15;
+  margin: 4px 2px;
+}
+
+.center-button {
+  /* Styles for center button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h7 {
+  /* Styles for heading 7 */
+  color: rgb(0, 0, 0);
+  font-family: "Franklin Gothic Medium";
+  font-size: 15pt;
+}
+
+#panel4 {
+  /* Styles for panel 4 */
+  width: auto;
+  height: auto;
+  background-color: #b6b2b247;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.button6 {
+  /* Styles for button 6 */
+  border-radius: 8px;
+  color: white;
+  background-color: #000000;
+  margin: 4px 2px;
+}
+
+h8 {
+  /* Styles for heading 8 */
+  color: rgb(0, 0, 0);
+  font-family: "Franklin Gothic Medium";
+  font-size: 10pt;
+  margin-bottom: 10px;
+}
+
+.slider-container {
+  /* Styles for the slider container */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slider-nav {
+  /* Styles for the slider navigation */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.nav-item {
+  /* Styles for the navigation item */
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.container {
+  /* Styles for the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container2 {
+  /* Styles for the container */
+  padding-top: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.input-group button {
+  /* Styles for the button in the input group */
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: #067a15;
+  color: white;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.row {
+  /* Styles for the row */
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  /* Styles for the column */
+  flex: 1;
+  padding: 10px;
+ 
+}
+
+.column h4 {
+  /* Styles for the heading within the column */
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.column p {
+  /* Styles for the paragraphs within the column */
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.save-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 16px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.like-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+}
+
+.like-button i {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+.like-button.liked {
+  background-color: red;
+}
+
+.like-button.liked i {
+  color: white;
+}
+
+.like-button i {
+  font-size: 40px;
+}
+
+/* Styling for form */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.form-submit {
+  margin-top: 10px;
+}
+
+.form-submit button {
+  padding: 10px 20px;
+  background-color: #067a15;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styling for saved-items-list */
+#saved-items-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#saved-items-list li {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+#saved-items-list li:last-child {
+  margin-bottom: 0;
+}
+
+#saved-items-list li a {
+  text-decoration: none;
+  color: #333;
+}
+
+#saved-items-list li a:hover {
+  text-decoration: underline;
+}
+
+
+/*# sourceMappingURL=main.css.map */
