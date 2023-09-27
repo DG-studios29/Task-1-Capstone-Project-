@@ -39,10 +39,9 @@ function isSaved(item) {
 }
 
 // Function to initialize the "Save for later" functionality
-function initializeSaveForLater() {
+function initializeSaveForLater(buttonsSelector) {
   // Get all the "Save for later" buttons
-  const saveButtons = document.querySelectorAll('.save-button');
-  const saveButtons2 = document.querySelectorAll('.save-button2');
+  const saveButtons = document.querySelectorAll(buttonsSelector);
 
   // Attach click event listener to each button
   saveButtons.forEach((button) => {
@@ -57,6 +56,7 @@ function initializeSaveForLater() {
       }
     });
   });
+}
 
   // Set initial text for each button
   saveButtons.forEach((button) => {
