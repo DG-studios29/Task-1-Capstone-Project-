@@ -1,17 +1,20 @@
 // Retrieve saved items from localStorage or initialize an empty array
 let savedItems = JSON.parse(localStorage.getItem('savedItems')) || [];
 
+// Improved toggleLike function with more descriptive variable names and comments
 function toggleLike(button) {
   button.classList.toggle("liked");
   const heartIcon = button.querySelector("i");
+
+  // Check if the button is liked
   if (button.classList.contains("liked")) {
     heartIcon.classList.remove("far");
     heartIcon.classList.add("fas");
-    button.innerHTML = "<i class='far fa-heart'></i>";
+    button.innerHTML = "<i class='far fa-heart'></i>"; // Change text to "Unlike"
   } else {
     heartIcon.classList.remove("fas");
     heartIcon.classList.add("far");
-    button.innerHTML = "<i class='far fa-heart'></i>";
+    button.innerHTML = "<i class='far fa-heart'></i>"; // Change text to "Like"
   }
 }
 
